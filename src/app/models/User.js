@@ -16,6 +16,7 @@ class User extends Model {
 
   /**
    * Compara as senhas utilizando o bcrypt
+   * @param {*} String
    */
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
